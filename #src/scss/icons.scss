@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "icons";
+    font-display: swap;
+    src: url("../fonts/icons.woff") format("woff"), url("../fonts/icons.woff2#icons") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+%ic {
+    font-family: "icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="_icon-"],
+[class*="_icon-"] {
+    &:before {
+        @extend %ic;
+        display: block;
+    }
+}
+
+
+._icon-arrow-down:before {
+  content: "\e900";
+}
+._icon-arrow-left:before {
+  content: "\e901";
+}
+._icon-basket:before {
+  content: "\e902";
+}
+._icon-chat:before {
+  content: "\e903";
+}
+._icon-discount:before {
+  content: "\e904";
+}
+._icon-facebook:before {
+  content: "\e905";
+}
+._icon-gift:before {
+  content: "\e906";
+}
+._icon-guarantee:before {
+  content: "\e907";
+}
+._icon-heart:before {
+  content: "\e908";
+}
+._icon-info:before {
+  content: "\e909";
+}
+._icon-instagram:before {
+  content: "\e90a";
+}
+._icon-letter:before {
+  content: "\e90b";
+}
+._icon-location:before {
+  content: "\e90c";
+}
+._icon-message:before {
+  content: "\e90d";
+}
+._icon-new:before {
+  content: "\e90e";
+}
+._icon-pencil:before {
+  content: "\e90f";
+}
+._icon-phone:before {
+  content: "\e910";
+}
+._icon-plus:before {
+  content: "\e911";
+}
+._icon-profile:before {
+  content: "\e912";
+}
+._icon-search:before {
+  content: "\e913";
+}
+._icon-set:before {
+  content: "\e914";
+}
+._icon-vip:before {
+  content: "\e915";
+}
+._icon-wood:before {
+  content: "\e916";
+}

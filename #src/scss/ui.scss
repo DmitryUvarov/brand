@@ -1,0 +1,131 @@
+// https://fls.guru/ibg.html
+
+._ibg{
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    }
+
+    ._ibg img {
+
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    }
+
+//  ОБЩИЕ СТИЛИ ПАГИНАЦИИ И СТРЕЛОК
+    .slider-pagination {
+        padding-left: 5px;
+        flex: 1 1 auto;
+        @media (min-width: $md2+px) {
+            display: none;
+        }
+    }
+    .swiper-pagination-bullet {
+        opacity: 1;
+        font-family: "PT Root UI";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        background: none;
+        margin: 0 4px;
+        color: rgba(0, 0, 0, 0.75);
+        transform: scale(1) !important;
+        color: rgba(0, 0, 0, 0.25);
+    }
+    .swiper-pagination-bullet-active {
+        text-align: center;
+        line-height: 36px !important;
+        border-radius: 3px;
+        width: 36px;
+        height: 36px;
+        margin: 0 12px !important;
+        color: #000;
+        font-weight: 700;
+        background: linear-gradient(135deg, #D3DCE0 0%, #F0F3F5 100%);
+        box-shadow: -3px -3px 12px rgba(255, 255, 255, 0.7), 3px 3px 12px rgba(96, 117, 128, 0.2);
+    }
+    .swiper-pagination-bullet-active-prev,
+    .swiper-pagination-bullet-active-next {
+        color: rgba(0, 0, 0, 0.75);
+    }
+    .swiper-pagination-bullet-active-prev-prev,
+    .swiper-pagination-bullet-active-next-next {
+        color: rgba(0, 0, 0, 0.5);
+    }
+    .swiper-pagination-bullet-active {
+        color: #000000;
+    }
+
+    .slider-arrows {
+        display: flex;
+        justify-content: flex-end;
+        @media (min-width: $md2+px) {
+            width: 100%;
+            position: absolute;
+            top: 139px;
+            left: 0;
+            justify-content: space-between;
+        }
+    }
+    .slider-arrow {
+        background: #E1E8EB;
+        box-shadow: 10px 10px 20px rgba(96, 117, 128, 0.05);
+        z-index: 10;
+        cursor: pointer;
+        width: 36px;
+        height: 36px;
+        @media (min-width: $md2+px) {
+            background: linear-gradient(135deg, #EBEEF0 18.51%, #D8E1E6 81.34%);
+            box-shadow: -3px -3px 12px rgba(255, 255, 255, 0.7), 3px 3px 12px rgba(96, 117, 128, 0.2);
+            border-radius: 48px;
+            padding: 2px;
+        }
+        & div {
+            display: flex;
+            align-items: center;
+            padding: 14px 16px 14px 10px;
+            &::before {
+                font-size: 8px;
+            }
+            @media (min-width: $md2+px) {
+                background: linear-gradient(135deg, #DAE2E6 0%, #E9EDF0 100%, #E9EDF0 100%);
+                width: 32px;
+                height: 32px;
+                border-radius: 48px;
+                padding: 7px;
+
+            }
+        }
+    }
+    .slider-arrow_prev {
+    }
+    .slider-arrow_next {
+
+        & div {
+
+            &::before {
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    // ОБНУЛЕНИЕ
+    .swiper-pagination-bullets-dynamic {
+        left: 0 !important;
+        transform: translateX(0) !important;
+        white-space: normal !important;
+        overflow: visible !important;
+    }
+    .swiper-pagination-bullet[style] {
+        left: 0 !important;
+    }
+    // ОБНУЛЕНИЕ
+
+//  ОБЩИЕ СТИЛИ ПАГИНАЦИИ И СТРЕЛОК /////////////
